@@ -40,6 +40,7 @@ def lambda_handler(event, context):
     keybucket = event['context']['key-bucket']
     outputbucket = event['context']['output-bucket']
     pubkey = event['context']['public-key']
+    print(pubkey)
     # Source IP ranges to allow requests from, if the IP is in one of these the request will not be checked for an api key
     ipranges = []
     if event['context']['allowed-ips']:
