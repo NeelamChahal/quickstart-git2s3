@@ -26,6 +26,7 @@ try:
     _compat_str = unicode
 except NameError:
     _compat_str = str
+
     assert bytes != str
 if b'\0'[0] == 0:  # Python 3 semantics
     def _compat_bytes_to_byte_vals(byt):
