@@ -42,6 +42,7 @@ except AttributeError:
         for bv in bytvals:
             assert isinstance(bv, _compat_int_types)
             res = (res << 8) + bv
+            print(res)
 
         return res
 
